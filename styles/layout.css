@@ -1,0 +1,29 @@
+.layout {
+  width: 20.37rem;
+  height: auto;
+
+  margin: 4.87rem 2rem 10.62rem 2rem;
+
+  @media (min-width: 80em) {
+    width: 39.18rem;
+    height: auto;
+
+    margin: 3.87rem auto 8.56rem auto;
+  }
+}
+
+.only-desktop {
+  display: none;
+
+    @media (min-width: 80em) {
+      display: flex;
+      justify-content: center;
+      width: 39.18rem;
+      margin: 1.56rem auto auto auto;
+    } 
+}
+
+h1 {
+  font: var(--text-title);
+  color: var(--content-primary);
+}
