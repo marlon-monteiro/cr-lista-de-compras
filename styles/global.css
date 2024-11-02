@@ -24,7 +24,7 @@
 
   --ff: "Inter", serif;
   --text-title: bold 1.5rem/2 var(--ff) ;
-  --text-label: 400 1rem/1.25 var(--ff);
+  --text-label: 500 1rem/1.25 var(--ff);
   --text-paragraph: 600 1rem/1.25 var(--ff);
   --text-link: 600 .875rem/1 var(--ff);
 }
