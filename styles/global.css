@@ -28,3 +28,7 @@
   --text-paragraph: 600 1rem/1.25 var(--ff);
   --text-link: 600 .875rem/1 var(--ff);
 }
+
+body {
+  background-color: var(--background-primary);
+}

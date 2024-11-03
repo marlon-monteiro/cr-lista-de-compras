@@ -47,3 +47,45 @@ main {
     border-radius: 1rem;
   }
 }
+
+.items {
+  & .item {
+    background-color: var(--background-secondary);
+    font: var(--text-paragraph);
+    color: var(--content-secondary);
+
+    width: 20.43rem;
+    height: 3.56rem;
+
+    border-radius: 0.75rem;
+
+    padding: 0.75rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    & label {
+      width: 1rem;
+      height: 1rem;
+      color: var(--border-primary);
+
+      border: solid 1px;
+      border-radius: 0.375rem;
+    }
+
+    & input {
+      width: 2rem;
+      height: 2rem;
+      opacity: 0;
+    }
+
+    & img {
+      display: flex;
+      justify-self: end;
+      width: 1rem;
+      height: 1rem;
+margin-left: auto;
+    }
+  }
+}
