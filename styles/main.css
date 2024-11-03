@@ -49,6 +49,10 @@ main {
 }
 
 .items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
   & .item {
     background-color: var(--background-secondary);
     font: var(--text-paragraph);
@@ -58,7 +62,6 @@ main {
     height: 3.56rem;
 
     border-radius: 0.75rem;
-
     padding: 0.75rem;
 
     display: flex;
@@ -75,8 +78,8 @@ main {
     }
 
     & input {
-      width: 2rem;
-      height: 2rem;
+      width: 1rem;
+      height: 1rem;
       opacity: 0;
     }
 
@@ -85,7 +88,49 @@ main {
       justify-self: end;
       width: 1rem;
       height: 1rem;
-margin-left: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: 80em) {
+  .items .item {
+    width: 39.18rem;
+  }
+}
+
+.item-remove {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem;
+
+  width: 20.43rem;
+  height: 2.75rem;
+  margin-top: 2.25rem;
+
+  font: var(--text-label);
+  color: var(--always-white);
+
+  background-color: var(--color-danger);
+
+  border: none;
+  border-radius: 0.75rem;
+
+  @media (min-width:80em ){
+    width: 100%;
+  }
+
+  & img {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &:last-child {
+      margin-left: auto;
     }
   }
 }

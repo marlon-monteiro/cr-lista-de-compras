@@ -2,7 +2,7 @@
   width: 20.37rem;
   height: auto;
 
-  margin: 4.87rem 2rem 10.62rem 2rem;
+  margin: 4.87rem auto 10.62rem auto;
 
   @media (min-width: 80em) {
     width: 39.18rem;
