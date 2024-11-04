@@ -32,3 +32,13 @@
 body {
   background-color: var(--background-primary);
 }
+
+.display-none {
+  display: none;
+}
+
+.display-show {
+  display: flex;
+}
+
+
