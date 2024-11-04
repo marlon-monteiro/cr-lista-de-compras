@@ -1,4 +1,4 @@
-
+import { createDivForItems } from "./utils/creatDivForItems.js"
 
 const inputText = document.getElementById("add-item-id")
 
@@ -9,9 +9,13 @@ inputText.addEventListener("input", () => {
   console.log(inputText.value)
 })
 
-buttonSubmit.addEventListener("click", ()=>{
+buttonSubmit.addEventListener("click", () => {
   console.log("clicou!")
 })
+
+const divForItems = createDivForItems()
+console.log(divForItems)
+
 
 
 
