@@ -1,20 +1,27 @@
 import { createDivForItems } from "./utils/creatDivForItems.js"
+import { textValue } from "./utils/textValue.js"
+import { submitEvent } from "./utils/submitEvent.js"
 
-const inputText = document.getElementById("add-item-id")
+submitEvent()
+textValue()
 
-const buttonSubmit = document.getElementById("button-submit-id")
+
+console.log("=========================")
 
 
-inputText.addEventListener("input", () => {
-  console.log(inputText.value)
-})
+// const divForItems = createDivForItems()
+// const textValueInput = textValue()
+// const submitButtonEvent = submitEvent()
 
-buttonSubmit.addEventListener("click", () => {
-  console.log("clicou!")
-})
+// console.log("== PARTE 2 ==")
 
-const divForItems = createDivForItems()
-console.log(divForItems)
+// console.log("divForItems ===", divForItems)
+// console.log("textValueInput ===", textValueInput)
+// console.log("submitButtonEvent ===", submitButtonEvent)
+
+
+
+
 
 
 
