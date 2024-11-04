@@ -1,31 +1,23 @@
 import { createDivForItems } from "./utils/creatDivForItems.js"
-import { textValue } from "./utils/textValue.js"
-import { submitEvent } from "./utils/submitEvent.js"
 
-submitEvent()
-textValue()
+const buttonSubmit = document.getElementById("button-submit-id")
 
+buttonSubmit.addEventListener("click", () => {
 
-console.log("=========================")
+  const inputText = document.getElementById("add-item-id")
+  const inputValueForDivCreation = inputText.value.trim()
 
+  console.log(inputValueForDivCreation)
 
-// const divForItems = createDivForItems()
-// const textValueInput = textValue()
-// const submitButtonEvent = submitEvent()
+  if (inputValueForDivCreation) {
+    const divCreated = createDivForItems(inputValueForDivCreation)
+    const divItems = document.querySelector(".items")
 
-// console.log("== PARTE 2 ==")
+    divItems.append(divCreated)
 
-// console.log("divForItems ===", divForItems)
-// console.log("textValueInput ===", textValueInput)
-// console.log("submitButtonEvent ===", submitButtonEvent)
-
-
-
-
-
-
-
-
+    inputText.value = ""
+  }
+})
 
 
 

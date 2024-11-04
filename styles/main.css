@@ -67,6 +67,10 @@ main {
   gap: 0.75rem;
 
   & .item {
+    /* DISPLAY AQUI */
+    align-items: center;
+    gap: 0.75rem;
+
     background-color: var(--background-secondary);
     font: var(--text-paragraph);
     color: var(--content-secondary);
@@ -76,10 +80,6 @@ main {
 
     border-radius: 0.75rem;
     padding: 0.75rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
 
     & label {
       position: relative;
